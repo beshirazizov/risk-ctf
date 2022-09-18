@@ -1,0 +1,378 @@
+* {
+    scroll-margin-top: 100px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #414141;
+}
+
+nav.navbar {
+    padding: 20px 0px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    width: 200px;
+}
+
+.bg-variant {
+    background-color: #f9faff;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    padding-right: 0px !important;
+}
+
+section h2 {
+    color: #0d6efd;
+}
+
+#banner {
+    background-image: url(../img/banner.svg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px -20px 60px 30px white;
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+#banner .container {
+    position: relative;
+    z-index: 100;
+}
+
+#banner .row {
+    height: calc(100vh - 81px);
+}
+
+#banner h1 {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#banner .banner-wrapper {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#banner #remaining-time {
+    font-weight: bold;
+}
+
+#organizers img {
+    width: 12%;
+    object-fit: contain;
+    transition: all .3s ease;
+}
+
+#organizers img:hover {
+    transform: scale(1.1);
+}
+
+#timeline .step-wrapper {
+    background-color: rgb(239, 240, 255);
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+
+#timeline .step-wrapper .content {
+    position: relative;
+    z-index: 100;
+}
+
+#timeline .step-wrapper:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+#timeline i {
+    font-size: 40px;
+    color: #0d6efd;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+#timeline .step-wrapper:hover i {
+    color: white;
+}
+
+#timeline p.date {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#timeline p.step {
+    margin-bottom: 5px;
+}
+
+#timeline p.step-desc {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+#timeline .circles-wrap {
+    position: absolute;
+    z-index: 1;
+    bottom: -95%;
+    right: -65%;
+}
+
+#timeline span.circle {
+    border-radius: 50%;
+    position: absolute;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#timeline .step-wrapper:hover span.circle {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+#timeline .step-wrapper .circles {
+    height: 400px;
+    width: 400px;
+    background: 0 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#timeline .step-wrapper span.circle.circle-1 {
+    height: 100px;
+    width: 100px;
+    background: white;
+    opacity: 0.2;
+    z-index: 5;
+    display: inline-block;
+    z-index: 5;
+}
+
+#timeline .step-wrapper span.circle.circle-2 {
+    height: 200px;
+    width: 200px;
+    background: white;
+    opacity: 0.2;
+    z-index: 4;
+}
+
+#timeline .step-wrapper span.circle.circle-3 {
+    height: 300px;
+    width: 300px;
+    background: white;
+    opacity: 0.2;
+    z-index: 3;
+}
+
+#timeline .step-wrapper span.circle.circle-4 {
+    height: 400px;
+    width: 400px;
+    background: white;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+#timeline .step-wrapper:hover span.circle {
+    transform: scale(1);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#prizes .prize-item {
+    background-color: rgb(239, 240, 255);
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    top: 0px;
+    transition: all .3s ease;
+}
+
+#prizes .prize-item:hover {
+    top: -20px;
+}
+
+#prizes .prize-item img {
+    display: block;
+    width: 40px;
+    margin: 0px auto 20px;
+    filter: invert(28%) sepia(93%) saturate(1912%) hue-rotate(207deg) brightness(97%) contrast(104%);
+}
+
+#prizes .prize-item h3 {
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: #0d6efd;
+}
+
+#prizes .prize-item p.small-prize {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+#prizes .prize-item p.small-prize:last-of-type {
+    margin-bottom: 0px;
+}
+
+#prizes .prize-item p.small-prize i {
+    color: #0d6efd;
+}
+
+#jury .jury-item {
+    position: relative;
+    overflow: hidden;
+}
+
+#jury .jury-item h4 {
+    font-size: 18px;
+}
+
+#jury .jury-item p {
+    font-size: 14px;
+}
+
+#jury .jury-item img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+#jury .jury-item .jury-info {
+    position: absolute;
+    bottom: -200px;
+    left: 0px;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all .3s ease;
+}
+
+#jury .jury-item:hover .jury-info {
+    bottom: 0px;
+}
+
+#contact .contact-item {
+    background-color: rgb(239, 240, 255);
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: all .3s ease;
+    text-decoration: none;
+    color: #414141;
+}
+
+#contact .contact-item:hover {
+    background-color: #0d6efd;
+    color: white;
+    transform: scale(1.05);
+}
+
+#contact .contact-item p {
+    margin-bottom: 0px;
+}
+
+#contact .contact-item i {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+footer {
+    background-color: #414141;
+    color: white;
+}
+
+#auth .banner {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#auth .auth-banner {
+    position: relative;
+}
+
+#auth .auth-banner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+}
+.auth-form-wrapper{
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 991.98px) {
+    .logo {
+        width: 150px;
+    }
+
+    nav.navbar {
+        padding: 10px 0px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #banner h1 {
+        font-size: 30px;
+    }
+
+    #banner p {
+        font-size: 14px;
+    }
+
+    #banner::before {
+        opacity: 0.8;
+    }
+
+    #about p {
+        font-size: 14px;
+    }
+
+    #organizers img {
+        width: 26%;
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}

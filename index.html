@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.I.S.K. CTF</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-end">
+                    <a class="nav-link" href="#about">Haqqımızda</a>
+                    <a class="nav-link" href="#organizers">Təşkilatçılar</a>
+                    <a class="nav-link" href="#timeline">Qrafik</a>
+                    <a class="nav-link" href="#faq">FAQ</a>
+                    <a class="nav-link" href="#prizes">Mükafatlar</a>
+                    <a class="nav-link" href="#jury">Münsiflər</a>
+                    <a class="nav-link" href="#contact">Əlaqə</a>
+                    <a class="nav-link btn btn-primary text-white ms-lg-4 px-3" href="login.html">Daxil ol</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="banner-wrapper">
+                        <h1 data-aos="fade-up" data-aos-delay="200">Capture The Flag!</h1>
+                        <p data-aos="fade-up" data-aos-delay="400">
+                            CTF formatı mütəxəssislərin kompüter sistemlərinin mühafizəsi üzrə bacarıq və səriştələrini
+                            qiymətləndirməyə imkan verir. Müsabiqə çərçivəsində iştirakçılara veb-tətbiqetmələrdə olan
+                            zəifliklərin istismarı, kriptoqrafiya, tərs mühəndislik, və s. bu kimi mövzular üzrə
+                            tapşırıqların həllini tapmaq təklif olunacaq.
+                        </p>
+                        <p id="countdown-wrapper" data-aos="fade-up" data-aos-delay="600">
+                            Yarışın başlamasına <span id="remaining-time"></span> qalıb!
+                        </p>
+                        <div data-aos="fade-up" data-aos-delay="800">
+                            <a href="register.html" class="btn btn-primary">İndi qeydiyyatdan keç!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="my-5 py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="img/about.jpeg" class="w-100 rounded" data-aos="fade-up" data-aos-delay="100">
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-4 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="mb-3">Müsabiqə haqqında</h2>
+                        <p>
+                            CTF formatı mütəxəssislərin kompüter sistemlərinin mühafizəsi üzrə bacarıq və səriştələrini
+                            qiymətləndirməyə imkan verir. Müsabiqə çərçivəsində iştirakçılara veb-tətbiqetmələrdə olan
+                            zəifliklərin istismarı, kriptoqrafiya, binar tətbiqetmələrdə olan pozuntuların istismarı,
+                            tərs mühəndislik, və s. bu kimi mövzular üzrə tapşırıqların həllini tapmaq təklif olunacaq.
+                        </p>
+                        <p class="mb-0">
+                            Müstəqil ekspertlər, həmçinin informasiya təhlükəsizliyi sahəsində ən iri şirkətlərinin
+                            aparıcı əməkdaşları iştirakçılar və qonaqların qarşısında çıxış edəcəklər. Bununla da tədbir
+                            nəinki ölkədə olan ən perspektivli informasiya təhlükəsizliyi mütəxəssislərinin müəyyən
+                            edilməsi və qeyd edilməsinə yardım edəcəkdir, həm də görüş və fikir mübadiləsi yeri,
+                            informasiyanın qorunması istiqamətində bazarın və texnologiyaların inkişafı haqqında daha
+                            səhih məlumatın alınma mənbəyi olacaqdır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="organizers" class="my-5 py-5 bg-variant">
+        <div class="container">
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-6">
+                    <h2>Təşkilatçılar</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aspernatur neque voluptate
+                        cumque explicabo?
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between flex-wrap" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/organizers/risk.png">
+                <img src="img/organizers/abb.png">
+                <img src="img/organizers/gov.svg">
+                <img src="img/organizers/gov2.svg">
+                <img src="img/organizers/pasha.png">
+                <img src="img/organizers/sima.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="my-5 py-5">
+        <div class="container">
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-6">
+                    <h2>Qrafik</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aspernatur neque voluptate
+                        cumque explicabo?
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-3">
+                    <div class="step-wrapper">
+                        <div class="content">
+                            <i class="bi bi-person-plus"></i>
+                            <p class="date">08.10.22</p>
+                            <p class="step">
+                                Qeydiyyat başlanır
+                            </p>
+                            <p class="step-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, corrupti?
+                            </p>
+                        </div>
+                        <div class="circles-wrap">
+                            <div class="circles">
+                                <span class="circle circle-1"></span>
+                                <span class="circle circle-2"></span>
+                                <span class="circle circle-3"></span>
+                                <span class="circle circle-4"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="step-wrapper">
+                        <div class="content">
+                            <i class="bi bi-person-x"></i>
+                            <p class="date">07.11.22</p>
+                            <p class="step">
+                                Son qeydiyyat tarixi
+                            </p>
+                            <p class="step-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, corrupti?
+                            </p>
+                        </div>
+                        <div class="circles-wrap">
+                            <div class="circles">
+                                <span class="circle circle-1"></span>
+                                <span class="circle circle-2"></span>
+                                <span class="circle circle-3"></span>
+                                <span class="circle circle-4"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="step-wrapper">
+                        <div class="content">
+                            <i class="bi bi-play-circle"></i>
+                            <p class="date">08.11.22</p>
+                            <p class="step">
+                                Müsabiqə başlanır
+                            </p>
+                            <p class="step-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, corrupti?
+                            </p>
+                        </div>
+                        <div class="circles-wrap">
+                            <div class="circles">
+                                <span class="circle circle-1"></span>
+                                <span class="circle circle-2"></span>
+                                <span class="circle circle-3"></span>
+                                <span class="circle circle-4"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="step-wrapper">
+                        <div class="content">
+                            <i class="bi bi-alarm"></i>
+                            <p class="date">09.11.22</p>
+                            <p class="step">
+                                Deadline
+                            </p>
+                            <p class="step-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, corrupti?
+                            </p>
+                        </div>
+                        <div class="circles-wrap">
+                            <div class="circles">
+                                <span class="circle circle-1"></span>
+                                <span class="circle circle-2"></span>
+                                <span class="circle circle-3"></span>
+                                <span class="circle circle-4"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="my-5 py-5 bg-variant">
+        <div class="container">
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-6">
+                    <h2>FAQ</h2>
+                    <p>
+                        Tez-tez verilən suallar.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion" id="faq-accordion" data-aos="fade-up" data-aos-delay="100">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Müsabiqədə hansı tapşırıqlar olacaq?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">
+                            Web (veb-tətbiqetmələrdə olan pozuntuların istismarı) <br>
+                            Crypto (kriptoqrafiya)<br>
+                            Pwn (binar tətbiqetmələrdə olan pozuntuların istismarı)<br>
+                            Reverse engineering (tərs mühəndislik)<br>
+                            Misc ( sairə tapşırıqlar)<br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Müsabiqənin formatı?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">
+                            Müsabiqə task-based (və ya jeopardy) formatında keçirilir - oyunçulara cavablandırıb
+                            göndərmələri üçün bir sıra tapşırıqlar verilir. Cavab bir bayraqdır: bir simvol və ya
+                            təsadüfi bir ifadə ola bilər. Komanda Düzgün yerinə yetirilmiş bir tapşırığa görə komanda
+                            müəyyən xallar alır. Tapşırıq nə qədər çətin olsa, doğru cavaba daha çox xal düşəcək..
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Kim iştirak edə bilər?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">
+                            Maraqlanan bütün informasiya təhlükəsizliyi üzrə mütəxəssislər iştirak edə bilər. Hər bir
+                            iştirakçı hər hansı bir komanda daxilində qeydiyyatdan keçməlidir.
+                            Müsabiqəyə qeydiyyat yalnız Azərbaycan Respublikası ərazisindən mümkündür.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Komandada neçə iştirakçı olmalıdır?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">
+                            Minimal bir iştirakçı. Komandada olan iştirakçıların maksimal sayı 5-dir. Əgər sizin sayınız
+                            çoxdursa, iki komandaya bölünsəniz yaxşı olar.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prizes" class="my-5 py-5">
+        <div class="container">
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-6">
+                    <h2>Mükafatlar</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aspernatur neque voluptate
+                        cumque explicabo?
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4 align-items-end" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4">
+                    <div class="prize-item text-center">
+                        <img src="img/cups/gold-cup.png">
+                        <h3>10,000 ₼</h3>
+                        <p class="small-prize">
+                            <i class="bi bi-chevron-right"></i>
+                            R.I.S.K. şirkətində təcrübə imkanı
+                        </p>
+                        <p class="small-prize">
+                            <i class="bi bi-chevron-right"></i>
+                            ABB-də təcrübə imkanı
+                        </p>
+                        <p class="small-prize">
+                            <i class="bi bi-chevron-right"></i>
+                            Lorem ipsum dolor sit amet
+                        </p>
+                        <p class="small-prize">
+                            <i class="bi bi-chevron-right"></i>
+                            Dolor sit amet kosta moreno
+                        </p>
+                        <p class="small-prize">
+                            <i class="bi bi-chevron-right"></i>
+                            Amet bispinq
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="prize-item text-center">
+                        <img src="img/cups/silver-cup.png">
+                        <h3>7,000 ₼</h3>
+                        <p class="small-prize">
+                            <i class="bi bi-chevron-right"></i>
+                            R.I.S.K. şirkətində təcrübə imkanı
+                        </p>
+                        <p class="small-prize">
+                            <i class="bi bi-chevron-right"></i>
+                            ABB-də təcrübə imkanı
+                        </p>
+                        <p class="small-prize">
+                            <i class="bi bi-chevron-right"></i>
+                            Lorem ipsum dolor sit amet
+                        </p>
+                        <p class="small-prize">
+                            <i class="bi bi-chevron-right"></i>
+                            Dolor sit amet kosta moreno
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="prize-item text-center">
+                        <img src="img/cups/bronze-cup.png">
+                        <h3>4,000 ₼</h3>
+
+                        <p class="small-prize">
+                            <i class="bi bi-chevron-right"></i>
+                            ABB-də təcrübə imkanı
+                        </p>
+                        <p class="small-prize">
+                            <i class="bi bi-chevron-right"></i>
+                            Lorem ipsum dolor sit amet
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jury" class="my-5 py-5 bg-variant">
+        <div class="container">
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-6">
+                    <h2>Münsiflər və mentorlar</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aspernatur neque voluptate
+                        cumque explicabo?
+                    </p>
+                </div>
+            </div>
+            <div class="row g-2 g-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-6 col-lg-3">
+                    <div class="jury-item">
+                        <img src="img/jury/jury.jpeg" alt="">
+                        <div class="jury-info">
+                            <h4 class="mb-1">Bahadur Rüstəmov</h4>
+                            <p class="mb-0">
+                                R.I.S.K. Company, <span class="text-primary">IT specialist</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="jury-item">
+                        <img src="img/jury/jury.jpeg" alt="">
+                        <div class="jury-info">
+                            <h4 class="mb-1">Bahadur Rüstəmov</h4>
+                            <p class="mb-0">
+                                R.I.S.K. Company, <span class="text-primary">IT specialist</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="jury-item">
+                        <img src="img/jury/jury.jpeg" alt="">
+                        <div class="jury-info">
+                            <h4 class="mb-1">Bahadur Rüstəmov</h4>
+                            <p class="mb-0">
+                                R.I.S.K. Company, <span class="text-primary">IT specialist</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="jury-item">
+                        <img src="img/jury/jury.jpeg" alt="">
+                        <div class="jury-info">
+                            <h4 class="mb-1">Bahadur Rüstəmov</h4>
+                            <p class="mb-0">
+                                R.I.S.K. Company, <span class="text-primary">IT specialist</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="my-5 py-5">
+        <div class="container">
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-6">
+                    <h2>Əlaqə</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aspernatur neque voluptate
+                        cumque explicabo?
+                    </p>
+                </div>
+            </div>
+            <div class="row g-2 g-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-3">
+                    <a href="#" class="contact-item">
+                        <i class="bi bi-envelope"></i>
+                        <p>ctf@risk.az</p>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="contact-item">
+                        <i class="bi bi-telephone"></i>
+                        <p>(+99412) 497 3737</p>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="contact-item">
+                        <i class="bi bi-telegram"></i>
+                        <p>@risk-ctf</p>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="contact-item">
+                        <i class="bi bi-building"></i>
+                        <p>59 Rashid Behbudov</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5 py-5">
+        <div class="container">
+            <p class="mb-0">
+                © 1993 - 2022, R.I.S.K. Company - Bütün hüquqlar qorunur
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
