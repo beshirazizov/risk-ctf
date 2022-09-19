@@ -33,24 +33,11 @@ section h2 {
 }
 
 #banner {
-    background-image: url(../img/banner.svg);
-    background-position: center;
-    background-size: cover;
     position: relative;
-    background-repeat: no-repeat;
-    box-shadow: inset 0px -20px 60px 30px white;
 }
 
 #banner::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    opacity: 0.7;
-    z-index: 1;
+
 }
 
 #banner .container {
@@ -66,11 +53,6 @@ section h2 {
     font-weight: bolder;
     font-size: 40px;
 }
-
-#banner .banner-wrapper {
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
 #banner #remaining-time {
     font-weight: bold;
 }
@@ -375,4 +357,14 @@ footer {
     footer p {
         font-size: 13px;
     }
+}
+
+#particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1000;
 }
